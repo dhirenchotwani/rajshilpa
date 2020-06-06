@@ -9002,7 +9002,7 @@ textarea.form-control {
     font-size: 90px;
     font-weight: normal;
     font-family: "Great Vibes", cursive;
-    color: #f67e7d; }
+    color: lightcoral; }
     @media (max-width: 991.98px) {
       .heading-section h2 {
         font-size: 50px; } }
@@ -9694,6 +9694,33 @@ textarea.form-control {
   -o-transition: opacity .2s ease-out, visibility 0s linear .2s;
   transition: opacity .2s ease-out, visibility 0s linear .2s;
   z-index: 1000; }
+
+.p1-gradient-color, .clockinner span {
+  background: -moz-linear-gradient(0deg, pink 0%, deeppink 55%, crimson 100%);
+  background: -webkit-linear-gradient(0deg, pink 0%, deeppink 55%, crimson 100%);
+  background: -ms-linear-gradient(0deg, pink 0%, deeppink 55%, crimson 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+					.clockinner1 {
+  -webkit-box-shadow: 0px 23px 34px -26px black;
+  -moz-box-shadow: 0px 23px 34px -26px black;
+  box-shadow: 0px 23px 34px -26px black;
+}
+				.clockinner {
+  text-align: center;
+  padding: 30px 0px;
+}
+
+.clockinner span {
+  font-size: 48px;
+  font-weight: 600;
+}
+
+.clockinner .smalltext {
+  color: #777;
+}
+
 
 #ftco-loader.fullscreen {
   padding: 0;
