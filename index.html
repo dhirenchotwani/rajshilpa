@@ -30,9 +30,32 @@
   <script src="js/jquery-migrate-3.0.1.min.js"></script>
 <script>
 	$(document).ready(function(){
-		$("#myModal").modal('show');
+		$("#myModal1").modal('show');
 	});
 </script>
+ <script>
+	function hehe(){	
+var starts = moment('2017-06-06 20:30:00');
+
+var ends   = moment();
+var diff = moment.preciseDiff(starts, ends, true); 
+// example: { "years": 2, "months": 7, "days": 0, "hours": 6, "minutes": 29, "seconds": 17, "firstDateWasLater":  false }
+
+
+// or as string:
+var diffHuman = moment.preciseDiff(starts, ends);
+
+var duration = moment.duration(ends.diff(starts));
+		document.getElementById("mons").innerHTML=diff['months'];
+		document.getElementById("year").innerHTML=diff['years'];
+		document.getElementById("day").innerHTML=diff['days'];
+		document.getElementById("hour").innerHTML=diff['hours'];
+		document.getElementById("min").innerHTML=diff['minutes'];
+		document.getElementById("sec").innerHTML=diff['seconds'];
+		setTimeout(hehe,1000);
+	}
+		window.onload=hehe;
+	</script>
   </head>
   <body data-spy="scroll" data-target=".site-navbar-target" data-offset="300" style="overflow-x: hidden">
   
@@ -476,7 +499,7 @@
     	</div>
     </section>
 !--->
-    <section class="ftco-section" style="height: auto; width: auto;background-image: url(images/shardayyy-photography-fJzmPe-a0eU-unsplash.jpg); background-size:cover; background-position: top;" id="when-where-section">
+    <section class="ftco-section" style="height: auto; width: auto;background-image: url(images/shardayyy-photography-fJzmPe-a0eU-unsplash2.jpg); background-size:cover; background-position: top;" id="when-where-section">
     	<div class="container">
     		<div class="row justify-content-center pb-5">
           <div class="col-md-12 text-center heading-section ftco-animate">
@@ -587,29 +610,7 @@
   <div id="ftco-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px"><circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee"/><circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10" stroke="#f08080"/></svg></div>
 
 
-    <script>
-	function hehe(){	
-var starts = moment('2017-06-06 20:30:00');
-
-var ends   = moment();
-var diff = moment.preciseDiff(starts, ends, true); 
-// example: { "years": 2, "months": 7, "days": 0, "hours": 6, "minutes": 29, "seconds": 17, "firstDateWasLater":  false }
-
-
-// or as string:
-var diffHuman = moment.preciseDiff(starts, ends);
-
-var duration = moment.duration(ends.diff(starts));
-		document.getElementById("mons").innerHTML=diff['months'];
-		document.getElementById("year").innerHTML=diff['years'];
-		document.getElementById("day").innerHTML=diff['days'];
-		document.getElementById("hour").innerHTML=diff['hours'];
-		document.getElementById("min").innerHTML=diff['minutes'];
-		document.getElementById("sec").innerHTML=diff['seconds'];
-		setTimeout(hehe,1000);
-	}
-		window.onload=hehe;
-	</script>
+    
 
 	<!--- jquery popper
 	  <script src="js/jquery.mb.YTPlayer.min.js"></script>
